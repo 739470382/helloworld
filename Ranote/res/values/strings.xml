@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RAノート</string>
+    <string name="notification_title_name">RAノート</string>
+
+    <!-- normal -->
+    <string name="cancle">キャンセル</string>
+    <string name="ok">はい</string>
+    <string name="certain">決定</string>
+    <string name="loading">読み込み中...</string>
+
+    <!-- main_activity -->
+    <string name="main_activity_indagation_mode_tip">診察モード中</string>
+
+    <!-- createschedule_activity -->
+    <string name="schedule_notification_all_day">終日</string>
+    <string name="schedule_start_time">開始</string>
+    <string name="schedule_end_time">終了</string>
+    <string name="schedule_repeat">繰り返し</string>
+    <string name="schedule_delete">このスケジュールを削除</string>
+    <string name="schedule_notification">通知</string>
+    <string name="schedule_default_repeat">しない</string>
+    <string name="schedule_default_notification_time">しない</string>
+    <string name="schedule_state_create">追加</string>
+    <string name="schedule_state_edit">保存</string>
+    <string name="schedule_normal_create">スケジュール登録</string>
+    <string name="schedule_see_to_docter_create">受診スケジュール登録</string>
+    <string name="schedule_medicine_create">お薬登録</string>
+    <string name="schedule_mycard_create">MYカルテ登録</string>
+    <string name="schedule_edit_hint"> タイトル</string>
+    <string name="schedule_operate_failed_message">操作失败</string>
+    <string name="schedule_memo_operate_failed_message">メモ内容を入力してください</string>
+    <string name="schedule_mycard_operate_failed_message">カルテ内容を入力してください</string>
+    <string name="schedule_name_is_null">スケジュールのタイトルを入力してください</string>
+    <string name="schedule_date_error">終了時間は開始時間より遅い時間にしてください</string>
+    <string name="schedule_medicine_name_is_null">お薬の名前を選択してください</string>
+    <string name="schedule_all_day">00:00~24:00</string>
+    <string name="schedule_start_time_zero">00:00</string>
+    <string name="schedule_end_time_zero">24:00</string>
+
+    <!-- mykarte_activity -->
+    <string name="mykarte_delete">このカルテを削除</string>
+
+    <!-- editschedule_activity -->
+    <string name="schedule_edit_title">編集</string>
+    <string name="schedule_edit_normal">スケジュール確認</string>
+    <string name="schedule_edit_see_to_doctor">受診日確認</string>
+    <string name="schedule_edit_medicine">お薬確認</string>
+    <string name="schedule_edit_mycard">MYカルテ確認</string>
+
+    <!-- create_medicine_schedule_activity -->
+    <string name="medicine_schedule_text_tip">お薬の名前</string>
+    <string name="medicine_schedule_text_name">アクテムラ</string>
+    <string name="medicine_schedule_notification_tip">時間指定、通知なし</string>
+
+    <!-- create_mycard_activity -->
+    <string name="create_mycard_edit_hint">過去の病歴や診察履歴を登録してください</string>
+
+    <!-- calendarfragment -->
+    <string name="calendar_circle">●</string>
+    <string name="calendar_sunday">日</string>
+    <string name="calendar_monday">月</string>
+    <string name="calendar_tuesday">火</string>
+    <string name="calendar_wednesday">水</string>
+    <string name="calendar_thursday">木</string>
+    <string name="calendar_friday">金</string>
+    <string name="calendar_saturday">土</string>
+    <string name="vas_title">VAS</string>
+    <string name="haq_title">HAQ</string>
+    <string name="memo_title">症状メモ</string>
+    <string name="schedule_no_record">スケジュールはありません</string>
+    <string name="msg_memo_is_none"> 症状メモの登録がありません</string>
+
+    <!-- recordfragment -->
+    <string name="tab_my_card_title">MYカルテ</string>
+    <string name="tab_memo_title">症状メモ</string>
+    <string name="tab_vas_haq_title">VAS・HAQ</string>
+
+    <!-- mykartefragment -->
+    <string name="mykarte_no_record"> MYカルテの登録がありません</string>
+
+    <!-- create_new_event_dialog -->
+    <string name="create_new_event_title">登録する</string>
+    <string name="schedule_title">スケジュール登録</string>
+    <string name="see_to_docter_title">受診日登録</string>
+    <string name="medicine_title">お薬登録</string>
+    <string name="my_car_title">MYカルテ登録</string>
+
+    <!-- setting_popup_dialog -->
+    <string name="setting_popup_setting">設定</string>
+    <string name="setting_popup_about">リウマチノートについて</string>
+
+    <!-- date_pick_dialog -->
+    <string name="date_pick_calendar_sunday">S</string>
+    <string name="date_pick_calendar_monday">M</string>
+    <string name="date_pick_calendar_tuesday">T</string>
+    <string name="date_pick_calendar_wednesday">W</string>
+    <string name="date_pick_calendar_thursday">T</string>
+    <string name="date_pick_calendar_friday">F</string>
+    <string name="date_pick_calendar_saturday">S</string>
+
+    <!-- time_pick_dialog -->
+    <string name="time_pick_title">時間を選択</string>
+    <string name="start_camera">カメラ起動</string>
+    <string name = "open_photo_album">フォトライブラリから選択</string>
+    
+
+    <!-- setting -->
+    <string name="lbl_set_mode">診察モード</string>
+    <string name="login_button_notclick">登録済み</string>
+    <string name="update_date_pre">最後のバックアップ:</string>
+    <string name="lbl_set_mode_setumei">診察モードをONにするとプライベートのスケジュールが見えなくなります</string>
+    <string name="setcomm_lbl_rule">利用規約</string>
+    <string name="setcomm_lbl_privacy">プライバシーポリシー</string>
+    <string name="set_backup">登録してデータをバックアップ</string>
+    <string name="set_reload">データ復元</string>
+    <string name="setting_text1">メールアドレスでユーザー登録するとアプリに入力したデータが自動的に保存されるようになります。\n機種変更される前に必ずユーザー登録をお願いします。</string>
+    <string name="setting_text2">最後にバックアップされたデータを復元します。復元にはユーザー登録したメールアドレスとパスワードが必要です。</string>
+
+    <!-- login -->
+    <string name="w10_10">ユーザー登録</string>
+    <string name="next">次へ</string>
+    <string name="lbl_user1_text">入力されたメールアドレス宛に確認メールが送信されます。</string>
+    <string name="lbl_user1_mail">メール</string>
+    <string name="page_user_login_title1">ユーザー登録(1/3)</string>
+    <string name="page_user_login_title2">ユーザー登録(2/3)</string>
+    <string name="page_user_login_title3">ユーザー登録(3/3)</string>
+    <string name="page_user_login_success">ユーザー登録完了</string>
+    <string name="page_user_login_fail">ユーザー登録失敗</string>
+    <string name="lbl_user2_text">入力されたメールアドレス宛に確認メールが送信送信されました。\nメールをご確認いただき本文に記載されている\n「確認コード」を入力してください。</string>
+    <string name="lbl_user2_code">確認コード</string>
+    <string name="hint_mail">メールアドレスを入力してください</string>
+    <string name="hint_code">○○○○○○</string>
+    <string name="login_step2_buttom_button_text">確認メールを再送</string>
+    <string name="login_step2_buttom_button_text1">確認コードが送られてこない場合は、確認メールを再送します。</string>
+    <string name="lbl_user3_text">メールアドレスを確認できました。ユーザー登録情報を入力してください。</string>
+    <string name="lbl_user3_psw1">パスワード</string>
+    <string name="lbl_user3_psw2">パスワード確認</string>
+    <string name="send">送信</string>
+    <string name="lbl_user_success">ユーザー登録が完了しました</string>
+    <string name="lbl_user_fail">ユーザー登録に失敗しました</string>
+    <string name="user_cal_back">カレンダーに戻る</string>
+    <string name="user_relogin">やり直す</string>
+    <string name="input_email_is_null">メールアドレスを入力してください</string>
+    <string name="input_email_style_error">正しいメールアドレスを入力してください</string>
+    <string name="input_password_is_null">パスワードを入力してください</string>
+    <string name="input_password_style_error">パスワードは英数6文字以上30文字以下</string>
+    <string name="input_password_difference">パスワードが一致しません</string>
+    <string name="input_identify_code_is_null">確認コードを入力してください</string>
+    <string name="input_identify_code_is_error">正しい確認コードを入力してください</string>
+
+    <!-- huifu -->
+    <string name="page_data_reback_titile">データ復元</string>
+    <string name="data_reback_success">データ復元完了</string>
+    <string name="data_reback_fail">データ復元失敗</string>
+    <string name="page_rule_title">データ復元失敗</string>
+    <string name="title_activity_login__two_step">Login_TwoStepActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_data_reback_text">登録したメールアドレスとパスワードを入力してください。</string>
+    <string name="lbl_data_reback_success">データの復元が完了しました</string>
+    <string name="lbl_data_reback_fail">データ復元に失敗しました</string>
+    <string name="restore_dialog_title">データを復元すると、\nいまのデータは失われます。\n復元しますか？</string>
+
+    <!-- vas -->
+    <string name="lable_vas_question1">今日のリウマチの活動性は</string>
+    <string name="lable_vas_question2">どのくらいですか？</string>
+    <string name="lable_vas_seekbar_left">症状なし</string>
+    <string name="lable_vas_seekbar_right">重い症状</string>
+    <string name="vas_btn_ok">決定する</string>
+    <string name="vas_bar_title">VAS登録</string>
+    <string name="dialog_mode_cancel">閉じる</string>
+    <string name="msg_vas_haq_is_none">VAS・HAQの登録がありません</string>
+
+    <!-- haq -->
+    <string name="haq_result_title">HAQ結果</string>
+    <string name="haq_bar_title">HAQ登録</string>
+    <string name="lable_haq_title1">この１週間のあなたの平均的な状態に </string>
+    <string name="lable_haq_title2">当てはまるものを選択してください</string>
+    <string name="haq_btn_sel1">できる</string>
+    <string name="haq_btn_sel2">少し困難</string>
+    <string name="haq_btn_sel3">かなり困難</string>
+    <string name="haq_btn_sel4">できない</string>
+    <string name="haq_add_btnPre">前の質問に戻る</string>
+    <string name="haq_add_btnNext">次の質問に進む</string>
+    <string name="question1">靴ひもを結び、ボタンかけも含め自分で身支度ができますか？</string>
+    <string name="question2">自分で洗髪ができますか？</string>
+    <string name="question3">椅子（肘かけがなく背もたれが垂直）から立ち上がれますか？</string>
+    <string name="question4">ベッドまたはふとんからの就寝、\n起床の動作ができますか？\n（日常使っている寝具につき\nお答えください）</string>
+    <string name="question5">お箸を使ってご飯を\n口に運べますか？</string>
+    <string name="question6">いっぱい水の入ったコップを\n口元まで運べますか？</string>
+    <string name="question7">新しい牛乳の紙パックの口を\n開けることができますか？</string>
+    <string name="question8">戸外の平坦な道を歩けますか？</string>
+    <string name="question9">階段を５段上がれますか？</string>
+    <string name="question10">体を洗い、タオルで拭くことが\nできますか？</string>
+    <string name="question11">浴槽につかることができますか？</string>
+    <string name="question12">洋式トイレに座ったり立ったり\nできますか？</string>
+    <string name="question13">頭上の棚に２リットルのペットボ\nトルがあった場合、それを下に\n降ろせますか？</string>
+    <string name="question14">腰を曲げて床にある衣服を\n拾い上げられますか？</string>
+    <string name="question15">自動車のドアを開けられますか？</string>
+    <string name="question16">広口ビンのふたを開けられますか？（すでに一度開けてあるもの）</string>
+    <string name="question17">回転式の蛇口を開閉できますか？</string>
+    <string name="question18">用事や買い物にでかけることが\nできますか？</string>
+    <string name="question19">自動車の乗り降りができますか？</string>
+    <string name="question20">そうじ機をかけたり庭仕事などの家事ができますか？</string>
+
+    <!-- haq result -->
+    <string name="haq_result_tip1">今週のあなたの</string>
+    <string name="haq_result_tip2">身体的機能の評価結果です</string>
+    <string name="haq_result_min">0</string>
+    <string name="haq_result_max">3</string>
+    <string name="haq_dialog_tip">今日の結果を決定しますか?</string>
+    <string name="haq_dialog_title">決定すると編集はできません</string>
+    <string name="haq_dialog_cancel">やり直す</string>
+
+    <!-- symptomaddactivity -->
+    <string name="sym_editext_prompt">メモ</string>
+    <string name="sym_title_text">症状メモ登録</string>
+    <string name="sym_image_name">写真を選択する</string>
+
+    <!-- general_dialog -->
+    <string name="dialog_title_delete_schedule_no_loop">スケジュールを削除しますか？</string>
+    <string name="dialog_title_delete_schedule_loop">繰り返しのスケジュールです"\n"削除しますか？</string>
+    <string name="dialog_title_schedule_interval_pick">繰り返し</string>
+    <string name="dialog_title_schedule_notification">通知</string>
+    <string name="dialog_title_off_see_to_docter">診察モードをOFFにしますか？</string>
+    <string name="dialog_title_delete_my_karte">このカルテを削除しますか？</string>
+    <string name="dialog_tip_schedule_update_one">このスケジュールのみを保存</string>
+    <string name="dialog_tip_schedule_update_many">今後の全スケジュールを保存</string>
+    <string name="dialog_title_update_schedule_loop">スケジュールを保存</string>
+
+    <!-- AboutUs -->
+    <string name="lbl_note_kanshu">監修</string>
+    <string name="lbl_note_hospital">川崎医科大学　リウマチ・膠原病学\n教授　守田吉孝先生</string>
+    <string name="lbl_note_professor">いいお医者さんネット</string>
+    <string name="lbl_note_professor_web"> 守田吉孝先生のウェブサイト</string>
+    <string name="lbl_note_professor_name">守田吉孝　先生</string>
+    <string name="lbl_note_produce">製作</string>
+    <string name="lbl_note_copyright">著作権表示</string>
+    <string name="lbl_note_copyright1">Copyright © 2015 Cure Grades Corp.</string>
+    <string name="lbl_note_copyright2">All rights reserved.</string>
+    <string name="about_us_title">リウマチノートについて</string>
+    <string name="lbl_rule_content1">1. ユーザの皆様は「リウマチノート(以下当アプリ)」の利用に関して適用される以下の利用規約を承認するものとします。</string>
+    <string name="lbl_rule_content2">2.当アプリはキュアグレーズ株式会社及び監修ドクター、医療機関(以下弊社ら)が当アプリの提供を通じて、ユーザ がご自身で情報を記録する際の補助を目的としているものであり、医療行為、診療行為又はこれに準ずる行為を、一 切の目的としておりません。</string>
+    <string name="lbl_rule_content3">3.当アプリにおけるいかなる情報も治療行為ではありません。ユーザはこのことを承諾した上で、自己責任において 当アプリを利用し、必要に応じて正しい情報の検索、医療機関の受診などを自身の判断で行ってください。</string>
+    <string name="lbl_rule_content4">4.当アプリの利用により何らかの不都合、不利益が発生し、また損害を被った場合でも、弊社らはそれに対し一切の 責任を負いませんので予めご了承ください。</string>
+    <string name="lbl_rule_content5">5.弊社らはユーザの承諾を得ることなく、本規約を変更できるものとし、変更後の本規約は当アプリ上に表示した時 点より効力が生じるものとします。</string>
+    <string name="lbl_rule_content6">6.本利用規約の変更の効力が生じた後、ユーザが当アプリをご利用される場合、変更後の本利用規約に同意したもの とみなされます。</string>
+    <string name="lbl_rule_content7">2015年5月施行</string>
+    <string name="druglist_add">その他お薬</string>
+    <string name="drud_add">お薬の名前</string>
+    <string name="edit_symptom_title">症状メモ確認</string>
+    
+    <!--register_faile_code -->
+     <string name="register_faile_code_used">操作に失敗し、このメールが使用される</string>
+    <string name="register_faile_code_nomessege">未知エラー</string>
+    <string name="register_faile_code_codeisnull">確認コードはブランク</string>
+    <string name="register_faile_code_passwordisnull">パスワードはブランク</string>
+    <string name="register_faile_code_codeiserror">確認コードエラー</string>
+     <string name="register_faile_code_passwordstyleiserroer">パスワード書式エラー</string>
+     <string name="register_faile_code_passwordnotmate">メールアドレス、もしくはパスワードが間違っています。ご確認ください。</string>
+     <string name="register_faile_code_emailisnull">メールアドレスはブランク</string>
+     <string name="register_faile_code_emailstyleiserroer">メールアドレス書式エラー</string>
+    
+    <!--Login_faile_code -->
+     <string name="login_faile_code_passwordiserroer">パスワードエラー</string>
+     <string name="data_updatabese_fail">データアップロード失敗</string>
+     
+     
+    <string name="looptype2">週ごと</string>
+    
+    <!-- error_code -->
+    <string name="error_code_100">一時的なエラーが発生しました。</string>
+    <string name="error_code_411">認証コードが入力されていません。</string>
+    <string name="error_code_412">パスワードが入力されていません。</string>
+    <string name="error_code_413">一時的なエラーが発生しました。</string>
+    <string name="error_code_414">メールアドレスが入力されていません。</string>
+    <string name="error_code_421">認証コードに誤りがあります。</string>
+    <string name="error_code_422">パスワードに誤りがあります。</string>
+    <string name="error_code_423">パスワードに誤りがあります。</string>
+    <string name="error_code_424">メールアドレスに誤りがあります。</string>
+    <string name="error_code_415">一時的なエラーが発生しました。</string>
+    <string name="error_code_425">一時的なエラーが発生しました。</string>
+    <string name="error_code_426">一時的なエラーが発生しました。</string>
+    <string name="error_code_427">一時的なエラーが発生しました。</string>
+    <string name="error_code_428">一時的なエラーが発生しました。</string>
+    <string name="error_code_434">このメールアドレスは既に登録されています。</string>
+    <string name="error_code_666">データをバックアップするためにアプリを再起動してください</string>
+    
+    
+
+</resources>

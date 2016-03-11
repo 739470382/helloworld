@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        
+        android:layout_marginTop="72dp" >
+
+        <TextView
+            android:id="@+id/txt_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="@string/certain"
+            android:layout_marginRight="48dp"
+            android:textColor="@color/main_color"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_sure"
+            android:layout_width="126dp"
+            android:layout_height="66dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txt_sure"
+            android:layout_marginRight="8dp"
+             />
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@id/txt_sure"
+            android:singleLine="true"
+            android:text="@string/cancle"
+            android:textColor="@color/main_color"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_cancel"
+            android:layout_width="156dp"
+            android:layout_height="66dp"
+            android:layout_toLeftOf="@id/view_sure"
+            android:layout_marginRight="30dp"
+             android:layout_alignTop="@+id/txt_sure"
+             />
+
+        <View
+            android:id="@+id/horizotal_line_one"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/txt_cancel" />
+    </RelativeLayout>
+
+</RelativeLayout>

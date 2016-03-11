@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pickerui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_dialog_setting_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <!-- android:background="@color/white" -->
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/relLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.bravesoft.riumachi.wheelChoice.PickerUI
+                    android:id="@+id/picker_ui_view"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                   android:layout_alignParentRight="true"
+                    pickerui:backgroundColor="#4cffa5"
+                    pickerui:blur="true"
+                    pickerui:blur_FilterColor="#ff5e48"
+                    pickerui:blur_downScaleFactor="@integer/blur_downscale_min"
+                    pickerui:blur_radius="@integer/blur_radius_min"
+                    pickerui:blur_use_renderscript="true"
+                    pickerui:itemsClickables="true"
+                    pickerui:textCenterColor="#000000"
+                    pickerui:textNoCenterColor="#737373" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relRight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.bravesoft.riumachi.wheelChoice.PickerUI
+                    android:id="@+id/picker_ui_view2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginLeft="15dp"
+                    pickerui:backgroundColor="#4cffa5"
+                    pickerui:blur="true"
+                    pickerui:blur_FilterColor="#ff5e48"
+                    pickerui:blur_downScaleFactor="@integer/blur_downscale_min"
+                    pickerui:blur_radius="@integer/blur_radius_min"
+                    pickerui:blur_use_renderscript="true"
+                    pickerui:itemsClickables="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/main_color"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/horizotal_line_two"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/txt_time_pick_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/time_pick_title"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/horizotal_line_three"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <!--
+             <TimePicker
+            android:id="@+id/timepick_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp" />
+        -->
+
+
+        <!--
+             <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lin"
+            layout="@layout/view_genenal_dialog_bottom" />
+        -->
+
+        <RelativeLayout
+            android:id="@+id/relative_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/lin" >
+
+            <TextView
+                android:id="@+id/txt_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="48dp"
+                android:singleLine="true"
+                android:text="@string/certain"
+                android:textColor="@color/main_color"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view_sure"
+                android:layout_width="126dp"
+                android:layout_height="66dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/txt_sure"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@id/txt_sure"
+                android:singleLine="true"
+                android:text="@string/cancle"
+                android:textColor="@color/main_color"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view_cancel"
+                android:layout_width="156dp"
+                android:layout_height="66dp"
+                android:layout_alignTop="@+id/txt_sure"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@id/view_sure" />
+
+            <View
+                android:id="@+id/horizotal_line_one"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/txt_cancel" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

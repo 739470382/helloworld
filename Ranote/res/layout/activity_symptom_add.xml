@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_root"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar_other" />
+    <LinearLayout 
+        android:id="@+id/symptom_add_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+      
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/layout_symptom_time"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textview_symptom_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textview_symptom_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+    <EditText
+        android:id="@+id/edittext_symptom"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" 
+        android:layout_marginTop="15dp"
+        android:hint="@string/sym_editext_prompt"
+        android:background="@null"
+        android:maxLength="3000"
+        android:gravity="top"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        />
+    </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+    
+<RelativeLayout 
+    android:id="@+id/relativeLayout_symptom_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/layout_symptom_image"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageview_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" 
+            android:src="@drawable/icon_camera_copy"/>
+
+        <TextView
+            android:id="@+id/textview_image_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/main_color" />
+        
+    </LinearLayout>
+    <View
+        android:id="@+id/smyptom_aad_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout_symptom_image"
+        android:background="@color/gray_line" />
+  
+   
+        
+   <ScrollView 
+        android:id="@+id/smyptom_image_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >  
+        <RelativeLayout
+            android:id="@+id/layout_image_show_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+             
+        <ImageView 
+            android:id="@+id/smyptom_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="32dp"
+            />
+        
+        <ImageView
+            android:id="@+id/cancel_smyptomimage"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="70dp"
+            android:visibility="gone"
+            android:src="@drawable/icon_delete_copy"
+            />
+         </RelativeLayout>
+        </ScrollView> 
+</RelativeLayout>
+</LinearLayout>
+</LinearLayout>

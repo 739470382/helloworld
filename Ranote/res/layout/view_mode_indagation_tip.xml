@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_mode_tip"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/txt_indagation_mode_tip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:text="@string/main_activity_indagation_mode_tip"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</RelativeLayout>

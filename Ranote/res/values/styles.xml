@@ -1,0 +1,69 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    
+    
+    <!-- Select a camera popup style -->
+        <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--  <item name="android:windowBackground">@android:color/transparent</item>-->
+
+    <!-- Progress window theme styles -->
+    <style name="NobackDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- The windowFrame Dialog box is not -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- Bleach now activity on -->
+       
+        <item name="android:windowNoTitle">true</item>
+        <!-- Translucent -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item> 
+        <!-- <item name="android:windowIsTranslucent">true</item>  -->
+    </style>
+    
+     <!-- SettingDialog  -->
+    <style name="TransparentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+         
+        <item name="android:windowIsFloating">true</item>
+        
+        
+        <item name="android:windowNoTitle">true</item>
+        
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!--  <item name="android:windowIsTranslucent">true</item>-->
+<!-- dialogDisplay the animation style-->
+        <style name="mystyle" parent="android:Animation">  
+        <item name="@android:windowEnterAnimation">@anim/anim_dialog_visible</item>   
+        <item name="@android:windowExitAnimation">@anim/anim_dialog_gone</item>  
+    </style>  
+</resources>

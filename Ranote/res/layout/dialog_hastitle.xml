@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_dialog_setting_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/relative_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/dialog_bg">
+        <View
+            android:id="@+id/horizotal_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tex_dialog_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizotal_line_two"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:text="@string/haq_dialog_tip"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tex_dialog_tip"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/txt_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/haq_dialog_title"
+                android:textColor="@color/text_gray2blank" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_title"
+            layout="@layout/view_genenal_dialog_bottom" />
+    </RelativeLayout>
+
+</RelativeLayout>

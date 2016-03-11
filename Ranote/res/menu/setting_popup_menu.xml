@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item 
+        android:id="@+id/popup_menu_setting"
+        android:title="@string/setting_popup_setting"/>
+    
+    <item 
+        android:id="@+id/popup_menu_about"
+        android:title="@string/setting_popup_about"/>
+
+</menu>

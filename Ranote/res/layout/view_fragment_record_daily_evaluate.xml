@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_calendar_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rel_vas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="left" >
+
+            <TextView
+                android:id="@+id/txt_vas_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/vas_title"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/txt_vas_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/txt_vas_title"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_haq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txt_haq_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/haq_title"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/txt_haq_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/txt_haq_title"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_memo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/txt_memo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/memo_title"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/image_memo"
+                android:layout_width="22dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/txt_memo_title"
+                android:background="@android:color/transparent"
+                android:src="@drawable/has_mome_mark" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontal_line_two"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+</LinearLayout>

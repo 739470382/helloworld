@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_root"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/titlebar_other" />
+
+    <LinearLayout
+        android:id="@+id/linear_delete_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="58dp"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/horizotal_line_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line" />
+
+        <TextView
+            android:id="@+id/txt_delete_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:text="@string/schedule_delete" />
+
+        <View
+            android:id="@+id/horizotal_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear_delete_schedule"
+        android:layout_below="@id/title_bar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relative_schedule_name"
+                android:layout_width="match_parent"
+                android:layout_height="96dp" >
+
+                <EditText
+                    android:id="@+id/edit_schedule_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/schedule_edit_hint"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textColorHint="@color/text_enable_gray"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:paddingLeft="30dp" />
+
+                <View
+                    android:id="@+id/horizotal_line_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_notify_all_day"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" >
+
+                <TextView
+                    android:id="@+id/txt_notify_all_day_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/schedule_notification_all_day"
+                    android:textColor="@color/black" />
+
+                <ToggleButton
+                    android:id="@+id/radio_notify_all_day"
+                    android:layout_width="76dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/coustom_togglebutton"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_start_time_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:text="@string/schedule_start_time"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/relative_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="right" >
+
+                <TextView
+                    android:id="@+id/txt_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="75dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/txt_start_time"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_end_time_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="13dp"
+                android:gravity="left"
+                android:text="@string/schedule_end_time"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/relative_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="right" >
+
+                <TextView
+                    android:id="@+id/txt_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="75dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/txt_end_time"
+                    android:textColor="@color/text_enable_gray"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/horizotal_line_four"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/relative_loop"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" >
+
+                <TextView
+                    android:id="@+id/txt_loop_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/schedule_repeat"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_loop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/schedule_default_repeat"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/horizotal_line_five"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/relative_notification"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" >
+
+                <TextView
+                    android:id="@+id/txt_notification_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/schedule_notification"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/schedule_default_notification_time"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/horizotal_line_six"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

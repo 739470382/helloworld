@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule_edit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/titlebar_arrow" />
+
+    <RelativeLayout
+        android:id="@+id/relative_schedule_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="28dp" >
+
+        <ImageView
+            android:id="@+id/img_schedule_type_mark"
+            android:layout_width="84dp"
+            android:layout_height="104dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/icon_human" />
+
+        <TextView
+            android:id="@+id/txt_schedule_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/img_schedule_type_mark"
+            android:maxLength="30"
+            android:maxLines="3"
+            android:singleLine="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_mykarte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:layout_below="@id/relative_schedule_title" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/repeat_bg"
+        android:layout_below="@id/list_mykarte"
+        android:orientation="vertical" />
+
+</RelativeLayout>

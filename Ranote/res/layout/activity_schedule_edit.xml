@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule_edit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+   <include 
+       android:id="@+id/title_bar"
+       layout="@layout/titlebar_arrow"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_schedule_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="28dp"
+        android:layout_below="@+id/title_bar" >
+
+        <ImageView
+            android:id="@+id/img_schedule_type_mark"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp" />
+        
+        <TextView
+            android:id="@+id/txt_schedule_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_schedule_type_mark"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:maxLength="30"
+            android:maxLines="3" />
+
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/linear_schedule_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_schedule_title"
+        android:orientation="vertical">
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_schedule_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/relative_schedule_title" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cut_line"/>
+
+        <TextView
+            android:id="@+id/txt_schedule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp" 
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_schedule_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_schedule_date"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="16dp" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

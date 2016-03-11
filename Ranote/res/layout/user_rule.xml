@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/user_rule_background"
+ >
+   
+    <include
+        android:id="@+id/login_step2_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_setting_title_bar" />
+    <WebView 
+    android:id="@+id/webview"
+     android:layout_below="@id/login_step2_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+   <!--  <ScrollView 
+        android:id="@+id/rule_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/user_rule_background"
+        android:layout_below="@id/login_step2_top"
+        >
+       <RelativeLayout
+        android:id="@+id/user_rule_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:background="@color/user_rule_background" >
+   
+            <RelativeLayout
+        android:id="@+id/user_rule_page2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/user_rule_background" >
+        <TextView 
+            android:id="@+id/rule_text1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/black"
+            android:text="@string/lbl_rule_content1"
+            />
+        <TextView 
+            android:id="@+id/rule_text2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/rule_text1"
+            android:textColor="@color/black"
+            android:text="@string/lbl_rule_content2"
+            />
+         <TextView 
+            android:id="@+id/rule_text3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/rule_text2"
+            android:textColor="@color/black"
+            android:text="@string/lbl_rule_content3"
+            />
+          <TextView 
+            android:id="@+id/rule_text4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/rule_text3"
+            android:textColor="@color/black"
+            android:text="@string/lbl_rule_content4"
+            />
+           <TextView 
+            android:id="@+id/rule_text5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/rule_text4"
+            android:textColor="@color/black"
+            android:text="@string/lbl_rule_content5"
+            />
+            <TextView 
+            android:id="@+id/rule_text6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/rule_text5"
+            android:textColor="@color/black"
+            android:text="@string/lbl_rule_content6"
+            />
+             <TextView 
+            android:id="@+id/rule_text7"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/rule_text6"
+            android:textColor="@color/black"
+            android:text="@string/lbl_rule_content7"
+            />
+        </RelativeLayout>
+        </RelativeLayout>
+        </ScrollView> -->
+   
+   
+</RelativeLayout>

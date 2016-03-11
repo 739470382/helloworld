@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relative_my_card_item"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+          >
+
+        <ImageView
+            android:id="@+id/img_mycard_mark"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_human"
+            android:clickable="false"
+            android:focusable="false" />
+
+         <ImageView
+            android:id="@+id/img_allow_all"
+            android:layout_width="16dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/icon_allow_all" />
+        
+        <TextView
+            android:id="@+id/txt_mycard_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_mycard_mark"
+            android:layout_toLeftOf="@id/img_allow_all"
+            android:singleLine="true"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+    
+</RelativeLayout>

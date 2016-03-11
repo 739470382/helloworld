@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_dialog_setting_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relative_pick_date_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/dialog_date_up" >
+
+            <TextView
+                android:id="@+id/txt_current_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:text="2015"
+                android:textColor="#90ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_current_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_current_year"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/horizotal_line_three"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/txt_current_date"
+                android:background="@color/main_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_picked_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="9/20"
+            android:textColor="#1f1f1f"
+            android:textStyle="bold" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_dialog_pick_date_week" />
+
+        <View
+            android:id="@+id/horizotal_line_four"
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <GridView
+            android:id="@+id/grid_date_pick_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="7"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/relative_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="6dp" >
+
+            <TextView
+                android:id="@+id/txt_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:text="@string/certain"
+                android:textColor="@color/main_color"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view_sure"
+                android:layout_width="86dp"
+                android:layout_height="66dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/txt_sure"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@id/txt_sure"
+                android:singleLine="true"
+                android:text="@string/cancle"
+                android:textColor="@color/main_color"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view_cancel"
+                android:layout_width="156dp"
+                android:layout_height="66dp"
+                android:layout_alignTop="@+id/txt_sure"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@id/view_sure" />
+
+            <View
+                android:id="@+id/horizotal_line_one"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/txt_cancel" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

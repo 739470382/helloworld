@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bravesoft.riumachi.widget.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_root"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/titlebar_other" />
+
+    <LinearLayout
+        android:id="@+id/linear_delete_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="58dp"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/horizotal_line_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line" />
+
+        <TextView
+            android:id="@+id/txt_delete_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:text="@string/mykarte_delete" />
+
+        <View
+            android:id="@+id/horizotal_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_above="@id/linear_delete_schedule"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <View
+                android:id="@+id/horizotal_line_three"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="96dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/relative_schedule_name"
+                android:layout_width="match_parent"
+                android:layout_height="290dp" >
+                
+                <EditText 
+                    android:id="@+id/edit_create_my_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="30dp"
+                    android:hint="@string/create_mycard_edit_hint"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:maxLength="3000"
+                    android:paddingRight="30dp"
+                    android:gravity="top|left"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/horizotal_line_four"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</com.bravesoft.riumachi.widget.KeyboardListenRelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+  <!-- PickerUI items dimens-->
+    <dimen name="height_normal_item_pickerui">40dp</dimen>
+    <dimen name="textsize_center_pickerui_item">20sp</dimen>
+    <dimen name="textsize_near_center_pickerui_item">17sp</dimen>
+    <dimen name="textsize_far_center_pickerui_item">15sp</dimen>
+    <dimen name="textsize_small_pickerui_item">11sp</dimen>
+
+    <!-- PickerUI lines dimens -->
+    <dimen name="margin_top_line_top_pickerui">80dp</dimen>
+    <dimen name="margin_top_line_bottom_pickerui">125dp</dimen>
+    <dimen name="height_lines_center_pickerui">1dp</dimen>
+
+    <!-- PickerUI panel dimens -->
+    <dimen name="height_hidden_panel_pickerui">200dp</dimen>
+</resources>

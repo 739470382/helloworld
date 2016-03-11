@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <!--
+     android:divider="@color/gray_line"
+        android:dividerHeight="1dp"
+    -->
+
+    <ListView
+        android:id="@+id/vas_haq_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent" 
+        android:divider="@null" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/vas_haq_list"
+        android:background="@color/gray_line" />
+
+    <TextView
+        android:id="@+id/txt_no_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/msg_vas_haq_is_none"
+        android:textColor="@color/text_gray"
+        android:textStyle="bold" />
+
+</RelativeLayout>

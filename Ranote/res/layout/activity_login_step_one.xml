@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+   
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_setting_title_bar" />
+    
+   
+    <RelativeLayout
+        android:id="@+id/user_page1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/user_page1_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="3dp"
+            android:ems="8"
+            android:lines="2"
+            android:text="@string/lbl_user1_text" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/user_page1_text_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_page1_text"
+            android:layout_marginBottom="60dp"
+            android:ems="8"
+            android:textStyle="bold"
+            android:textColor="@color/cue_title"
+            android:text="@string/lbl_user1_mail" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/user_page1_txtMail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/user_page1_text_mail"
+            android:background="@null"
+            android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.@_+-–/"
+            android:textCursorDrawable="@drawable/edittext_cursor"
+            android:hint="@string/hint_mail"
+            android:lines="1"
+            android:singleLine="true"
+            android:ems="8" >
+
+        </EditText>
+      <!--  android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.@_+-" -->
+       
+        </RelativeLayout>
+         <View
+        android:id="@+id/login1_set_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cut_line" />
+
+    
+  
+     
+     <!-- android:background="@color/cut_line"  -->
+</LinearLayout>

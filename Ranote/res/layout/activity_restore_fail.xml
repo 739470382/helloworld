@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+ >
+   
+    <include
+        android:id="@+id/restore_fail_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_success_fail_title_bar" />
+    <RelativeLayout 
+        android:id="@+id/user_restore_page2_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+       
+        android:background="@color/white" 
+        >
+        <TextView
+            android:id="@+id/user_restore_fail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/lbl_data_reback_fail" >
+        </TextView>
+        <RelativeLayout 
+        android:id="@+id/user_restore_page2_2"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_below="@id/user_restore_fail_text"
+        android:background="@drawable/blue_button_rounnd" 
+        >
+         <TextView
+            android:id="@+id/user_restore_fail_button_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            
+            android:textColor="@color/white"
+            android:text="@string/user_relogin" >
+        </TextView>
+        </RelativeLayout>
+         <RelativeLayout 
+        android:id="@+id/user_restore_page2_3"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_below="@id/user_restore_page2_2"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/blue_button_rounnd" 
+        >
+         <TextView
+            android:id="@+id/user_restore_fail_button_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            
+            android:textColor="@color/white"
+            android:text="@string/user_cal_back" >
+        </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    
+    </RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/haq_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vashaq_background"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/haq_result_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:gravity="center_vertical"
+            android:text="@string/haq_result_tip1" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/haq_result_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/haq_result_tip1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/haq_result_tip2" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/rela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/haq_result_tip2"
+            android:layout_marginTop="92dp" >
+
+            <ImageView
+                android:id="@+id/result_img_count"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/count" />
+
+            <TextView
+                android:id="@+id/haq_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/haq_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/rela"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="21dp"
+            android:progressDrawable="@drawable/haqseekbar_style"
+            android:thumb="@drawable/seekbar_thumb" >
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/haq_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/haq_seekbar"
+            android:layout_below="@+id/haq_seekbar"
+            android:layout_marginTop="14dp"
+            android:text="@string/haq_result_min" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/haq_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/haq_seekbar"
+            android:layout_below="@+id/haq_seekbar"
+            android:layout_marginTop="14dp"
+            android:text="@string/haq_result_max" >
+        </TextView>
+
+        <Button
+            android:id="@+id/haq_add_btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_below="@+id/haq_max"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="71dp"
+            android:background="@drawable/blue_button_rounnd"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/vas_btn_ok"
+            android:textColor="@color/white" >
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/haq_result_rel_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/haq_add_btnOK"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rel_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/img_result_pre"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                     
+                    android:src="@drawable/arrow_pre" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/haq_result_btnPre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/haq_add_btnPre"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

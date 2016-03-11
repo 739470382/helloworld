@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_vashaq_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/carlendar_shadow" />
+
+            <TextView
+                android:id="@+id/ab_us_jianxiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/lbl_note_kanshu"
+                android:textColor="@color/text_gray"
+                android:textStyle="bold" >
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/jianxiu_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="27dp"
+                android:layout_marginTop="57dp"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/ab_us_right"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/icon_allow_all" />
+
+                <TextView
+                    android:id="@+id/note_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/ab_us_right"
+                    android:gravity="center_vertical"
+                    android:text="@string/lbl_note_hospital"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/rnote_professor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/lbl_note_professor"
+                android:textColor="@color/text_gray"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relative_good_docter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="27dp"
+                android:layout_marginTop="57dp"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/img_arrow_two"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/icon_allow_all" />
+
+                <TextView
+                    android:id="@+id/rnote_professor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/lbl_note_professor"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/relative_good_docter_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="27dp"
+                android:layout_marginTop="27dp"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/img_arrow_three"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/icon_allow_all" />
+
+                <TextView
+                    android:id="@+id/txt_rnote_professor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/lbl_note_professor_web"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/rnote_produce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/lbl_note_produce"
+                android:textColor="@color/text_gray"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/rnote_produce_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rnote_produce"
+                android:layout_marginTop="36dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/rnote_produce_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/rogo_curegrades" />
+
+                <ImageView
+                    android:id="@+id/rnote_produce_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/rogo_kayac" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="27dp"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/rnote_copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/lbl_note_copyright"
+                android:textColor="@color/text_gray2blank"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rnote_copyright1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/lbl_note_copyright1" />
+
+            <TextView
+                android:id="@+id/rnote_copyright2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/lbl_note_copyright2" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/gray_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

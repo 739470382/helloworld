@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- normal -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#666666</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF8C00</color>
+    <color name="yellow">#FFF8DC</color>
+    <color name="green">#ADFF2F</color>
+    <color name="blue">#1C86EE</color>
+    <color name="transparent">#FFFFFFFF</color>
+    <color name="gray_line">#dddddd</color>
+    <color name="text_gray">#9b9b9b</color>
+    <color name="text_gray2blank">#919191</color>
+    <color name="pink">#ef5555</color>
+    <color name="foucs">#212121</color>
+    <color name="mode_dialog_bg">#FAFAFA</color>
+    <color name="button_not_click">#77ffffff</color>
+    <color name="text_enable_gray">#808080</color>
+    <color name="loginbutton_not_click">#D3D3D3</color>
+    
+
+    <!-- mainactivity -->
+    <color name="main_color">#169DA9</color>
+    <color name="main_mode_tip">#3084e5</color>
+
+
+    
+
+   
+    <color name="cue_title">#9b9b9b</color>
+    
+     <!-- calendarfragment -->
+
+    <color name="see_to_docter_mark">#f6e51b</color>
+    <color name="bological_agent_mark">#f05265</color>
+    <color name="antibiotic_mark">#3084e5</color>
+    <color name="other_medicine_mark">#6ac804</color>
+    <color name="week_item_txt_work_day">#a0a4a7</color>
+    <color name="week_item_txt_sunday">#f05265</color>
+    <color name="week_item_txt_saturday">#3084e5</color>
+    <color name="week_bottom_line">#c8c7cc</color>
+    <color name="item_selected_background">#97d6e6</color>
+    <color name="item_txt_selected">#3084e5</color>
+    <color name="item_txt_un_select">#62696d</color>
+    
+
+    <!-- settingdialog -->
+    <color name="setting_list_background">#4a4a4a</color>
+    <color name="mode_guide_dialog_background">#ebeeef</color>
+
+    <!-- setting -->
+    <color name="cut_line">#DDDDDD</color>
+    <color name="vashaq_background">#E7F3F7</color>
+
+    <color name="btn_txt_main_cloor">#169DA9</color>
+    <color name="btn_txt_white">#ffffff</color>
+    <color name="user_rule_background">#E9F3F8</color>
+    
+    
+    
+    
+    
+      
+       <!-- PickerUI lines colors -->
+    <color name="lines_panel_pickerui">#aaaaaa</color>
+ <color name="background_picker">#ff579fff</color>
+    
+    <!-- PickerUI panel colors -->
+    <color name="background_panel_pickerui">#fffafafa</color>
+
+    <!-- PickerUI items colors -->
+    <color name="text_center_pickerui">#ff000000</color>
+    <color name="text_no_center_pickerui">#aaa</color>
+    <drawable name="list_item_selected">#aaaaaa</drawable>
+
+    <!-- PickerUI shadow colors -->
+    <color name="grey1">#00CCCCCC</color>
+    <color name="grey2">#10CCCCCC</color>
+    <color name="grey3">#20CCCCCC</color>
+    <color name="grey4">#30CCCCCC</color>
+    <color name="grey5">#50747474</color>
+
+</resources>

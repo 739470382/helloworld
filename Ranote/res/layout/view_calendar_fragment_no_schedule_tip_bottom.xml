@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_no_record_bottom_one"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp" >
+
+        <TextView
+            android:id="@+id/txt_schedule_no_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/schedule_no_record"
+            android:textColor="@color/text_gray" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/horizotal_line_three"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_line" />
+
+    <View
+        android:id="@+id/relative_no_record_bottom_two"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp" />
+
+    <View
+        android:id="@+id/horizotal_line_four"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+    <View
+        android:id="@+id/relative_no_record_bottom_three"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp" />
+
+    <View
+        android:id="@+id/horizotal_line_five"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+    <View
+        android:id="@+id/relative_no_record_bottom_four"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp" />
+
+    <View
+        android:id="@+id/horizotal_line_six"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+    <View
+        android:id="@+id/relative_no_record_bottom_five"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp" />
+
+    <View
+        android:id="@+id/horizotal_line_seven"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+    <View
+        android:id="@+id/relative_no_record_bottom_six"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp" />
+
+    <View
+        android:id="@+id/horizotal_line_eight"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+    <View
+        android:id="@+id/relative_no_record_bottom_seven"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp" />
+
+    <View
+        android:id="@+id/horizotal_line_nine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+</LinearLayout>

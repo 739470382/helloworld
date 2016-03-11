@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_vashaq_title_bar" />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/carlendar_shadow" />
+
+    <RelativeLayout
+        android:id="@+id/vas_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vashaq_background" >
+
+        <TextView
+            android:id="@+id/vas_question_part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="96dp"
+            android:gravity="center_vertical"
+            android:text="@string/lable_vas_question1" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/vas_question_part2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vas_question_part1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/lable_vas_question2" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vas_question_part2"
+            android:layout_marginTop="92dp" >
+
+            <ImageView
+                android:id="@+id/img_count"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/count" />
+        </RelativeLayout>
+        
+        <TextView
+                android:id="@+id/vas_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                 android:layout_below="@+id/vas_question_part2"
+                 android:scaleType="fitXY"
+                 android:layout_marginTop="69dp"
+                 android:textStyle="bold"
+                 android:typeface="normal"
+                 />
+
+        <SeekBar
+            android:id="@+id/vas_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/l"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="23dp"
+            android:clickable="false"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/seekbar_thumb" >
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/vas_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vas_seekbar"
+            android:layout_below="@+id/vas_seekbar"
+            android:layout_marginTop="14dp"
+            android:text="@string/lable_vas_seekbar_left" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/vas_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/vas_seekbar"
+            android:layout_below="@+id/vas_seekbar"
+            android:layout_marginTop="14dp"
+            android:text="@string/lable_vas_seekbar_right" >
+        </TextView>
+
+        <Button
+            android:id="@+id/vas_add_btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_below="@+id/vas_max"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="73dp"
+            android:background="@drawable/blue_button_rounnd"
+            android:gravity="center"
+           
+            android:textStyle="bold"
+            android:text="@string/vas_btn_ok"
+            android:textColor="@color/white" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>
